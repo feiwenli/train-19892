@@ -8,22 +8,22 @@ image:
   repository: registry.cn-hangzhou.aliyuncs.com/trainning-c7n-tarin/train-19892
   pullPolicy: Always
 
-preJob:
-  preConfig:
-    configFile: application.yml
-    mysql:
-      host: 192.168.12.175
-      port: 3306
-      database: manager_service
-      username: root
-      password: choerodon
-  preInitDB:
-    mysql:
-      host: 192.168.12.175
-      port: 3306
-      database: demo_service
-      username: root
-      password: choerodon
+#preJob:
+#  preConfig:
+#    configFile: application.yml
+#    mysql:
+#      host: 192.168.12.175
+#      port: 3306
+#      database: manager_service
+#      username: root
+#      password: choerodon
+#  preInitDB:
+#    mysql:
+#      host: 192.168.12.175
+#      port: 3306
+#      database: demo_service
+#      username: root
+#      password: choerodon
 
 deployment:
   managementPort: 18081

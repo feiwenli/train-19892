@@ -73,8 +73,12 @@ file-service:
   ribbon:
     ReadTimeout: 15000
     ConnectTimeout: 15000
-mybatis:
-  mapperLocations: classpath*:/mapper/*.xml
-  configuration: # 数据库下划线转驼峰配置
-    mapUnderscoreToCamelCase: true
+#mybatis:
+#  mapperLocations: classpath*:/mapper/*.xml
+#  configuration: # 数据库下划线转驼峰配置
+#    mapUnderscoreToCamelCase: true
+
+
+number: 19892
+name: 李斐文
 
