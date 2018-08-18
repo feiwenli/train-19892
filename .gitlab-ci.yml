@@ -7,14 +7,14 @@ stages:
 maven-test-branches:
   stage: mvn-package
   script:
-    - git_merge feature-feature-李斐文-19892-20180817-choerodon培训任务
+    - git_merge feature-李斐文-19892-20180817-choerodon培训任务
     - mvn package -U -DskipTests=false
   only:
     - branches
   except:
     - master
     - tags
-    - feature-feature-李斐文-19892-20180817-choerodon培训任务
+    - feature-李斐文-19892-20180817-choerodon培训任务
     - /^release-.*$/
     - /^hotfix-.*$/
 
@@ -28,7 +28,7 @@ maven-test-build:
     - cp target/app.jar /cache/${CI_PROJECT_NAME}-${CI_PROJECT_ID}-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHA}/app.jar
   only:
     - tags
-    - feature-feature-李斐文-19892-20180817-choerodon培训任务
+    - feature-李斐文-19892-20180817-choerodon培训任务
     - /^release-.*$/
     - /^hotfix-.*$/
 
@@ -39,7 +39,7 @@ docker-build:
     - chart_build
   only:
     - tags
-    - feature-feature-李斐文-19892-20180817-choerodon培训任务
+    - feature-李斐文-19892-20180817-choerodon培训任务
     - /^release-.*$/
     - /^hotfix-.*$/
 
